@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .dark {
+    color: white;
+
+    color-scheme: dark;
+  }
+
+  .dark *:where([style*="color: black"]) {
+    color: white !important;
+  }
+}
